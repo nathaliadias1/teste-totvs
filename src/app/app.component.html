@@ -1,10 +1,25 @@
-<div class="container"
-  [class.ready]="!!user">
-  <input [formControl]="findControl"
-    placeholder="GitHub username" />
+<div class="topo">
+  <img  width="300" alt="logo" src="../assets/images/logo.png" class="logo">
+</div> 
+  <div>
+    <div class ="col-md-8 card-align">
+    <div class="container"  
+      [class.ready]="!!user">
+      <div class="col-md-6">
+      <div class="form-group input-group">
+          <span class="input-group-addon"><i class="fas fa-search"></i></span>
+      <input [formControl]="findControl"
+       placeholder="Digite seu GitHub username" class="form-control"/>
+       <div>
+          <button class="btn btn-md btn-info"  type="submit">Pesquisar</button>
+      </div>
+      </div>
+    </div>
+       <app-user *ngIf="user"
+         [user]="user"></app-user>
 
-  <app-user *ngIf="user"
-    [user]="user"></app-user>
-
-  <app-error *ngIf="error"></app-error>
-</div>
+        <app-error *ngIf="error"></app-error>
+      </div>
+    </div>
+  </div>
+ 

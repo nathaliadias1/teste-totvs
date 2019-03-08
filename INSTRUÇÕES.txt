@@ -1,0 +1,12 @@
+# totvs-projeto
+
+Esse projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 6.0.8.
+
+## Server
+Execute `ng serve` para um servidor dev. Navegue até `http: // localhost: 4200 /`. O aplicativo será recarregado automaticamente se você alterar qualquer arquivo.
+
+
+## Teste Unitários 
+
+Execute `ng test` para executar os testes unitários via [Karma](https://karma-runner.github.io).
+
